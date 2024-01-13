@@ -23,6 +23,16 @@ const router = createRouter({
       path: '/event/:index/:title',
       name: 'single-event',
       component: () => import('../views/EventView.vue')
+    },
+    {
+      path: '/workshop/list',
+      name: 'workshop-list',
+      component: () => import('../views/WorkshopPageView.vue')
+    },
+    {
+      path: '/workshop/:index/:title',
+      name: 'single-workshop',
+      component: () => import('../views/WorkshopView.vue')
     }
   ]
 })

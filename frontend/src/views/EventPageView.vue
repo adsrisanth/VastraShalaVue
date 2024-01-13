@@ -6,7 +6,7 @@ import { useRouter } from "vue-router";
 const router = useRouter()
 
 onMounted(()=>{
-    document.title = 'Events - Cine Carnival'
+    document.title = 'Events -  VastraShala'
     document.querySelector('.event-list-container').scrollIntoView( {behavior:'instant'} )
 })
 
@@ -19,7 +19,7 @@ onMounted(()=>{
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
             </svg>
         </button>
-        <span class="text-center font-montserrat  font-extrabold tracking-wide text-[40px] sm:text-[46px] relative mt-[74px]">Cine Carnival Events</span>
+        <span class="text-center font-montserrat  font-extrabold tracking-wide text-[40px] sm:text-[46px] relative mt-[74px]"> VastraShala Events</span>
         <div class="flex justify-center max-md:gap-8 max-ssm:md-6 md:gap-12 flex-wrap sm:mt-12">
             <div v-for="event in EventsData" :key="event.index" class="card relative w-[380px] h-[480px] rounded-3xl overflow-hidden shadow-md">
                 <div class="poster relative top-0 left-0 w-full h-full overflow-hidden">

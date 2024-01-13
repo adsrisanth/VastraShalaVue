@@ -25,7 +25,7 @@
       <div class="contact-section flex flex-col text-center text-gray-800 relative mr-3">
         <span class="text-black text-[25px] pb-2 font-montserrat tracking-wider font-extrabold">Contact</span>
         <span class="pb-2 pt-2 font-montserrat font-semibold opacity-85 ">+91000000000</span>
-        <span class="pb-2 font-montserrat font-semibold opacity-85 ">+91000000000</span>
+        <span class="pb-2 font-montserrat font-semibold opacity-85 ">+91 63094 66281</span>
         <span class="pb-2 font-montserrat font-semibold opacity-85 tracking-wide text-[16px]">demo@gmail.com</span>
       </div>
       
@@ -100,12 +100,8 @@
 }
 
 .footer-bottom{
-  background-image: linear-gradient(
-    130deg,
-    hsl(243deg 91% 5%) 0%,
-    hsl(205deg 46% 19%) 101%,
-    hsl(191deg 45% 32%) 100%
-    );
+  background: rgb(45,19,4);
+background: linear-gradient(311deg, rgba(45,19,4,1) 0%, rgba(144,106,46,1) 0%, rgba(45,19,4,1) 100%);
 }
 
 </style>

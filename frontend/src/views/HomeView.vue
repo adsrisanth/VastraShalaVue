@@ -7,6 +7,7 @@ import FooterView from './FooterView.vue';
 import { computed, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import CarouselEventsView from './CarouselEventsView.vue'
+import CarouselWorkshopView from './CarouselWorkshopView.vue'
 
 const routes = useRoute()
 
@@ -35,6 +36,8 @@ onMounted(()=>{
   }
   else if(to.value == 'events-carousel')
     document.getElementById('events-carousel').scrollIntoView({ behavior: 'smooth' });
+  else if(to.value == 'workshop-carousel')
+    document.getElementById('workshop-carousel').scrollIntoView({ behavior: 'smooth' });
 })
 
 </script>
@@ -52,6 +55,9 @@ onMounted(()=>{
     </div>
     <div class="home-child bg-[#000] max-w-[100vw] overflow-hidden"  id="events-carousel">
       <CarouselEventsView ref="homeChild" />
+    </div>
+    <div class="home-child bg-[#000] max-w-[100vw] overflow-hidden"  id="workshop-carousel">
+      <CarouselWorkshopView ref="homeChild" />
     </div>
     <div class="home-child" id="team-view partners-view">
       <PageSevenView  ref="homeChild"/>

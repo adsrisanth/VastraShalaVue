@@ -1,20 +1,11 @@
 <script setup>
 const data = [
-  'https://m.media-amazon.com/images/S/pv-target-images/314c028e3fc572db40f6c79a9e21980e45700b205dcedbcbffd76c38f6c5bdae.jpg',
-  'https://m.media-amazon.com/images/S/pv-target-images/314c028e3fc572db40f6c79a9e21980e45700b205dcedbcbffd76c38f6c5bdae.jpg',
-  'https://m.media-amazon.com/images/S/pv-target-images/314c028e3fc572db40f6c79a9e21980e45700b205dcedbcbffd76c38f6c5bdae.jpg',
-  'https://m.media-amazon.com/images/S/pv-target-images/314c028e3fc572db40f6c79a9e21980e45700b205dcedbcbffd76c38f6c5bdae.jpg',
-  'https://m.media-amazon.com/images/S/pv-target-images/314c028e3fc572db40f6c79a9e21980e45700b205dcedbcbffd76c38f6c5bdae.jpg',
-  'https://m.media-amazon.com/images/S/pv-target-images/314c028e3fc572db40f6c79a9e21980e45700b205dcedbcbffd76c38f6c5bdae.jpg',
-  'https://m.media-amazon.com/images/S/pv-target-images/314c028e3fc572db40f6c79a9e21980e45700b205dcedbcbffd76c38f6c5bdae.jpg',
-  'https://m.media-amazon.com/images/S/pv-target-images/314c028e3fc572db40f6c79a9e21980e45700b205dcedbcbffd76c38f6c5bdae.jpg',
-  'https://m.media-amazon.com/images/S/pv-target-images/314c028e3fc572db40f6c79a9e21980e45700b205dcedbcbffd76c38f6c5bdae.jpg',
-  'https://m.media-amazon.com/images/S/pv-target-images/314c028e3fc572db40f6c79a9e21980e45700b205dcedbcbffd76c38f6c5bdae.jpg',
-  'https://m.media-amazon.com/images/S/pv-target-images/314c028e3fc572db40f6c79a9e21980e45700b205dcedbcbffd76c38f6c5bdae.jpg',
-  'https://m.media-amazon.com/images/S/pv-target-images/314c028e3fc572db40f6c79a9e21980e45700b205dcedbcbffd76c38f6c5bdae.jpg',
-  'https://m.media-amazon.com/images/S/pv-target-images/314c028e3fc572db40f6c79a9e21980e45700b205dcedbcbffd76c38f6c5bdae.jpg',
-  'https://m.media-amazon.com/images/S/pv-target-images/314c028e3fc572db40f6c79a9e21980e45700b205dcedbcbffd76c38f6c5bdae.jpg',
-  'https://m.media-amazon.com/images/S/pv-target-images/314c028e3fc572db40f6c79a9e21980e45700b205dcedbcbffd76c38f6c5bdae.jpg'
+  'https://i.postimg.cc/yY7tC5qq/fek-14.jpg',
+  'https://i.postimg.cc/xdqHpZg3/fek-5.jpg',
+  'https://i.postimg.cc/Bvg9F0fC/fek-9.jpg',
+  'https://i.postimg.cc/859yJKcH/fek-7.jpg',
+  'https://i.postimg.cc/zXdtZGSW/fek3.jpg',
+  'https://i.postimg.cc/7ZWW7Z5D/fek4.jpg',
 ]
 
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
@@ -65,9 +56,9 @@ const options = {
     <div class="flex justify-center items-center">
       <Splide :options="options" class="flex justify-center">
         <SplideSlide v-for="(image ,index) in data" :key="index"
-          class="flex overflow-hidden justify-center max-vsm:w-full w-[465px] h-[260px] bg-[#000]">
+          class="flex overflow-hidden justify-center max-vsm:w-full w-[465px] h-[260px] bg-transparent">
           <img :src="image" :alt="'Gallery image - ' + (index+1)"
-            class="flex justify-center active:cursor-grabbing cursor-grab rounded-3xl"
+            class="flex justify-center active:cursor-grabbing cursor-grab rounded-3xl object-cover"
           >
         </SplideSlide>
       </Splide>

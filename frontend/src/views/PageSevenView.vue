@@ -15,16 +15,16 @@ import PartnersView from './PartnersView.vue';
             <RouterLink to="/team" class="font-extrabold font-montserrat">The Group</RouterLink>
             <span class="text-[13px] tracking-wide ml-6 -mt-3 text-gray-300 relative font-thin font-merriweather">Click here to view team</span>
           </h2>
-          <p class="mb-3 font-montserrat flex justify-center xxl:text[37px] text-[23px] max-sm:text-[23px] max-ssm:text-[21px] max-vsm:text-[21px] ">"Cine Carnival: Cinematic Kaleidoscope"  transports attendees through film history. From timeless classics to cutting-edge technology, it explores diverse genres, embraces emerging trends, and sparks creativity. An immersive celebration where every frame tells a story, fostering a love for filmmaking and honoring the art that transcends time.
+          <p class="mb-3 font-montserrat flex justify-center xxl:text[37px] text-[23px] max-sm:text-[23px] max-ssm:text-[21px] max-vsm:text-[21px] ">The "VastraShala" team, spearheaded by the passionate minds of "Fitoor – e – Kala," is a collective of creative visionaries dedicated to transforming fashion into a powerful means of self-expression. Comprising designers, stylists, and event organizers, this dynamic team curates an immersive experience that goes beyond traditional fashion shows. With an unwavering commitment to showcasing authenticity, the VastraShala team creates a platform where every garment and accessory becomes a brushstroke in the canvas of individuality. Together, they weave a narrative of artistry, making a bold statement that resonates with the diverse voices within the world of fashion.
           </p>
         </div>
-        <img class="md:w-[40%] max-md:order-1 max-ssm:w-[85%] w-[70%] saturate-0 bg-blend-color-burn" src="../assets/images/group-photo.jpg" alt="temp"/>
+        <img class="md:w-[40%] max-md:order-1 max-ssm:w-[85%] w-[70%] saturate-0 bg-blend-color-burn" src="https://i.postimg.cc/vH3CW1Kx/fek-12.jpg" alt="temp"/>
       </div>
       <div class="md:pt-24 pt-16">
         <GalleryView />
       </div>
       <div class="home-child"  id="partners-view">
-        <PartnersView ref="homeChild" />
+        <!-- <PartnersView ref="homeChild" /> -->
       </div>
       <AccordationView />
     </div>
