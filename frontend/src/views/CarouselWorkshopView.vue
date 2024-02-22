@@ -3,37 +3,26 @@ import { WorkshopData } from '../data/Workshop';
 import { useRouter } from 'vue-router';
 
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
-import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 const options = {
-  rewind: true,
   perPage: 3,
   perMove: 1,
   gap: '3rem',
   type: 'slide',
-  rewindSpeed: 3000,
-  autoplayDelay: 300,
-  arrows: false,
+  arrows: true,
   pagination: false,
-  extensions: { AutoScroll },
-  interval: 1000,
-  autoScroll: {
-    speed: 800,
-    pauseOnHover: true,
-    pauseOnFocus: false,
-  },
   breakpoints: {
-    725: { perPage:  WorkshopData.length>1 ?1 : WorkshopData.length , autoplay: WorkshopData.length > 1 },
-    1056: { perPage: WorkshopData.length>2 ?2 : WorkshopData.length , autoplay: WorkshopData.length > 2},
-    1350: { perPage: WorkshopData.length>3 ?3 : WorkshopData.length , autoplay: WorkshopData.length > 3},
-    1700: { perPage: WorkshopData.length>4 ?4 : WorkshopData.length , autoplay: WorkshopData.length > 4},
-    2000: { perPage: WorkshopData.length>5 ?5 : WorkshopData.length , autoplay: WorkshopData.length > 5},
-    2500: { perPage: WorkshopData.length>5 ?5 : WorkshopData.length , autoplay: WorkshopData.length > 5},
-    3500: { perPage: WorkshopData.length>6 ?6 : WorkshopData.length , autoplay: WorkshopData.length > 6},
-    4500: { perPage: WorkshopData.length>7 ?7 : WorkshopData.length , autoplay: WorkshopData.length > 7},
-    5500: { perPage: WorkshopData.length>8 ?8 : WorkshopData.length , autoplay: WorkshopData.length > 8},
-    6500: { perPage: WorkshopData.length>9 ?9 : WorkshopData.length , autoplay: WorkshopData.length > 9},
-    7500: { perPage: WorkshopData.length>10 ?10 : WorkshopData.length, autoplay: WorkshopData.length > 10},
+    725: { perPage:  WorkshopData.length>1 ?1 : WorkshopData.length },
+    1056: { perPage: WorkshopData.length>2 ?2 : WorkshopData.length },
+    1350: { perPage: WorkshopData.length>3 ?3 : WorkshopData.length },
+    1700: { perPage: WorkshopData.length>4 ?4 : WorkshopData.length },
+    2000: { perPage: WorkshopData.length>5 ?5 : WorkshopData.length },
+    2500: { perPage: WorkshopData.length>5 ?5 : WorkshopData.length },
+    3500: { perPage: WorkshopData.length>6 ?6 : WorkshopData.length },
+    4500: { perPage: WorkshopData.length>7 ?7 : WorkshopData.length },
+    5500: { perPage: WorkshopData.length>8 ?8 : WorkshopData.length },
+    6500: { perPage: WorkshopData.length>9 ?9 : WorkshopData.length },
+    7500: { perPage: WorkshopData.length>10 ?10 : WorkshopData.length},
   },
 };
 const router = useRouter()

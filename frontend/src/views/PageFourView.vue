@@ -94,19 +94,16 @@ const teams = [
             role: '',
             members:[
                     {
-                        name:'User 1',
-                        image:'https://images.unsplash.com/photo-1618641986557-1ecd230959aa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D',
-                        designation:'DEG 1'
+                        name:'Dinesh SriSanth Adari',
+                        image:'https://i.postimg.cc/4Xf17FmL/photo-2024-02-11-19-24-06.jpg',
                     },
                     {
-                        name:'User 2',
-                        image:'https://images.unsplash.com/photo-1618641986557-1ecd230959aa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D',
-                        designation:'DEG 2'
+                        name:'Harsha Vardhan Polamarsetty',
+                        image:'https://i.postimg.cc/bqfCFJGM/Whats-App-Image-2024-02-11-at-19-15-52.jpg',
                     },
                     {
-                        name:'User 3',
-                        image:'https://images.unsplash.com/photo-1618641986557-1ecd230959aa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D',
-                        designation:'DEG 3'
+                        name:'Silla Ganesh',
+                        image: 'https://i.postimg.cc/rpBCCBKK/my-pic.jpg'
                     }
                 ]
             }
