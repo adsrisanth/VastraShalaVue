@@ -40,7 +40,6 @@ const router = useRouter()
         <SplideSlide v-for="(event,index) in WorkshopData" :key="index" class="flex  justify-center lg:w-[380px] lg:h-[480px] max-lg:w-[350px] max-lg:h-[420px] max-md:w-[300px] max-md:h-[380px] ssm:w-[360px] ssm:h-[450px] vsm:w-[350px] 
         vsm:h-[400px] max-vsm:w-[280px] max-vsm:h-[350px] max-vvsm:w-[220px] max-vvsm:h-[300px] bg-[#2d1304] ">
           <div class="flex justify-center active:cursor-grabbing cursor-grab rounded-3xl overflow-hidden  ">
-            {{ console.log(index , event.title) }}
            <img @click="router.push({ name: 'single-workshop', params:{index: event.index , title: event.title} })"
             :src="event.image" :alt="event.title"
             class="object-fill transition-all hover:scale-105 hover:overflow-hidden"/>
