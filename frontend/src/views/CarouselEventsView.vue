@@ -28,7 +28,6 @@ const options = {
 const router = useRouter()
 
 const handleClick= (index,title)=>{
-  console.log({index,title})
   router.push({ name: 'single-event', params:{index: index , title: title} })
   
 }
