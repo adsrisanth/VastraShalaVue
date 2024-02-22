@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import WorkshopPageView from '../views/WorkshopPageView.vue'
+import WorkshopView from '../views/WorkshopView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,12 +29,12 @@ const router = createRouter({
     {
       path: '/workshop/list',
       name: 'workshop-list',
-      component: () => import('../views/WorkshopPageView.vue')
+      component: WorkshopPageView
     },
     {
       path: '/workshop/:index/:title',
       name: 'single-workshop',
-      component: () => import('../views/WorkshopView.vue')
+      component: WorkshopView
     }
   ]
 })
